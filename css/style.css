@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+  }
+  
 body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    min-height: 100%;
 }
 .conteiner{
     max-width: 1290px;
@@ -166,7 +171,11 @@ border: 30px solid #2B2CA4;
 }
 .readiness_indicator{
     padding-top: 80px;
-
+    
+        width: 100%;
+        overflow: scroll;
+      overflow-y: hidden;
+      overflow-x: hidden;
 }
 
 .ready_sum p{
@@ -372,7 +381,7 @@ font-size: 16px;
 margin-left: 20%;
 }
 footer{
-    background-image: url(/img/bgc.png);
+    background-image: url(./img/bgc.png);
     display: flex;
     padding-top: 200px;
     flex-direction: column;
@@ -399,3 +408,43 @@ border-radius: 50px 0px 0px 50px;
 width: 353px;
 height: 44px;
 }
+@media (max-width: 1199px){ 
+    .container{
+        width: 960px;
+    }
+    .readiness_indicator{
+    width: 100%;
+    overflow: scroll;
+
+
+}
+
+
+
+    .container{
+        width: 720px;
+    }
+    .header{
+display: none;    }
+
+    .about_us{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .about_us_description{
+        margin-left: 50px;
+    }
+  
+      }
+    
+    .ready_sum{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .indicator_desk{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
