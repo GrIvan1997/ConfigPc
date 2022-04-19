@@ -1,6 +1,4 @@
-html {
-    height: 100%;
-  }
+
   
 body{
     font-family: 'Roboto', sans-serif;
@@ -8,7 +6,7 @@ body{
     min-height: 100%;
 }
 .conteiner{
-    max-width: 1290px;
+    max-width: 80%;
     margin:  auto;
 }
 header{
@@ -23,12 +21,13 @@ header{
     align-items: center;
 }
 .nav{
-margin-left: 280px;
+margin-left: 10%;
     display: flex;
     justify-content: space-around;
 }
 .nav_item{
-    margin-left: 55px;
+    white-space: nowrap;
+    margin-left: 35px;
     list-style-type: none;
     color: #fff;
     
@@ -42,7 +41,6 @@ line-height: 150%;
 .header_button{
    
     margin-right: 80px;
-    float: right;
     display: flex;
     text-decoration: none;
    color: #fff;
@@ -57,7 +55,6 @@ border-radius: 50px;
 }
 .zag{
     margin-top: 191px;
-    
     
 }
 h1{
@@ -77,10 +74,6 @@ line-height: 140%;
 }
 
 
-.logo{
-    float: left;
-    margin-left: 80px;
-}
 .number_participants{
     padding-top: 20px;
     align-items: center;
@@ -381,7 +374,7 @@ font-size: 16px;
 margin-left: 20%;
 }
 footer{
-    background-image: url(./img/bgc.png);
+    background-image: url(../img/bgc.png);
     display: flex;
     padding-top: 200px;
     flex-direction: column;
@@ -403,48 +396,92 @@ color: #fff;
 }
 .ready_imp{
     background: #FFFFFF;
-opacity: 0.25;
-border-radius: 50px 0px 0px 50px;
+
+border-radius: 50px ;
 width: 353px;
 height: 44px;
 }
-@media (max-width: 1199px){ 
-    .container{
-        width: 960px;
-    }
-    .readiness_indicator{
-    width: 100%;
-    overflow: scroll;
 
+@media (min-width: 1200px) and (max-width:1440px){
+.nav{
+    margin-left: 0%;
+}
+.nav_item{
+    margin-left: 10px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.conteiner{
+    width: 100%;
+    max-width: 100%;
+}
+.header_button{
+    margin-right: 0%;
+}
+.nav{
+    margin-left: 2%;
+}
+.img_pc{
+    width: 426px;
+    height: 399px;
+    border: 30px solid #2B2CA4;
+}
+.pc_contein{
+    margin-top: 0%;
+}
+.about_us_description{
+    margin-top: 0%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .conteiner{
+        width: 100%;
+        max-width: 100%;
+    }
+    .header_button{
+        margin-right: 0%;
+    }
+    .nav{
+        display: none;
+        margin-left: 2%;
+    }
+    main{
+        padding-top: 0%;
+          }
+    .img_pc{
+        width: 426px;
+        height: 399px;
+        border: 30px solid #2B2CA4;
+    }
+    .pc_contein{
+        margin-top: 0%;
+    }
+    .about_us{
+        flex-direction: column-reverse;
+    }
+    .about_us_description{
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .qwe{
+        margin-left: 150px;
+    }
+    .advantages_list{
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
 
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
 
+}
 
-    .container{
-        width: 720px;
-    }
-    .header{
-display: none;    }
+@media (max-width: 320px) {
 
-    .about_us{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .about_us_description{
-        margin-left: 50px;
-    }
-  
-      }
-    
-    .ready_sum{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-
-    .indicator_desk{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-
+}
