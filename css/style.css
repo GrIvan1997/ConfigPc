@@ -781,6 +781,8 @@ header{
         display: block;
     }
     .zag{
+	    margin-top: 0px;
+	    padding-top:100px;
         padding-bottom: 200px;
     }
     .nav{
